@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("snakebgg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right: 80px;
+    font-size: 30px;
+    font-weight:lighter;
+    font-family:cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top:50px;
+    right: 65px;
+    font-size: 25px;
+    font-weight:lighter;
+    font-family:cursive;
+}
+#board{
+    background: linear-gradient(aqua,crimson);
+    width: 45vw;
+    height: 95vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(darkseagreen,darkorange);
+    border: 2px solid black;
+    border-radius: 15px;
+    transform: scale(1.02);
+}
+
+.snake{
+    background: linear-gradient(darkblue,red);
+    border: 1.5px solid whitesmoke;
+    border-radius: 12px;
+}
+.food{
+    background:linear-gradient(darkmagenta,green);
+    border:2px solid red;
+    border-radius: 8px;
+}
